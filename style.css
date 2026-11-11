@@ -264,11 +264,6 @@ img {
   color: var(--main);
 }
 
-.section-heading > p:last-child {
-  font-size: 13px;
-  color: var(--sub-text);
-}
-
 /* =========================
    ABOUT
 ========================= */
@@ -340,16 +335,6 @@ img {
   transform: translateY(-8px);
 }
 
-.skill-icon {
-  width: 65px;
-  height: 65px;
-  margin: 0 auto 15px;
-  background: var(--light);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 27px;
-}
 
 .skill-card h3 {
   color: var(--main-dark);
@@ -452,32 +437,6 @@ img {
 .contact {
   background: var(--pale);
   text-align: center;
-}
-
-.contact-box {
-  max-width: 750px;
-  margin: auto;
-  padding: 65px 30px;
-  background: var(--light);
-  border-radius: 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-box h2 {
-  color: var(--text);
-  font-size: 40px;
-  margin: 10px 0;
-}
-
-.contact-box h2 span {
-  color: var(--main-dark);
-}
-
-.contact-box > p:not(.section-subtitle) {
-  color: var(--sub-text);
-  font-size: 13px;
-  margin-bottom: 25px;
 }
 
 /* =========================
