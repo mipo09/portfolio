@@ -141,10 +141,10 @@ const works = {
     description:
       "課題や予定を管理するWebアプリケーション。カレンダーや課題一覧などを活用し、予定を分かりやすく管理できるように制作しました。",
     images: [
-      "images/works/planner1.png",
-      "images/works/planner2.png",
-      "images/works/planner3.png",
-      "images/works/planner4.png"
+      "images/works/planner-1.png",
+      "images/works/planner-2.png",
+      "images/works/planner-3.png",
+      "images/works/planner-4.png"
     ]
   },
 
@@ -153,10 +153,10 @@ const works = {
     description:
       "音声認識や画像解析を活用して、会議の内容を自動で記録・整理するシステムです。",
     images: [
-      "images/works/minutes1.png",
-      "images/works/minutes2.png",
-      "images/works/minutes3.png",
-      "images/works/minutes4.png"
+      "images/works/minutes-1.png",
+      "images/works/minutes-2.png",
+      "images/works/minutes-3.png",
+      "images/works/minutes-4.png"
     ]
   },
 
@@ -165,10 +165,10 @@ const works = {
     description:
       "商品販売や売上管理などを行いながら、カフェを経営するシミュレーションゲームです。",
     images: [
-      "images/works/cafe1.png",
-      "images/works/cafe2.png",
-      "images/works/cafe3.png",
-      "images/works/cafe4.png"
+      "images/works/cafe-manager-1.png",
+      "images/works/cafe-manager-2.png",
+      "images/works/cafe-manager-3.png",
+      "images/works/cafe-manager-4.png"
     ]
   }
 

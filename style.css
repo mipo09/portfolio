@@ -867,3 +867,28 @@ body.modal-open {
   }
 
 }
+
+/* モーダル内のスクロールバー */
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #A78BD4 #F1ECF8;
+}
+
+/* Chrome・Edge用 */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #F1ECF8;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #A78BD4;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #8062B0;
+}
