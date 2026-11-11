@@ -28,7 +28,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
+        <a href="#github">MY GITHUB</a>
       </nav>
     </div>
   </header>
@@ -82,9 +82,8 @@
         <div class="about-text">
           <h3>Mipopo</h3>
           <p>
-            大阪公立大学工業高等専門学校 2年知能情報コース所属のMipopoです。
-
-
+            大阪公立大学工業高等専門学校 2年知能情報コース所属のMipopoです。<br>
+            高専に入ってからプログラミングを学び始め、現在は主にPythonやWeb系の技術を学習しています。<br>
 
           </p>
         </div>
@@ -93,12 +92,19 @@
 
     <!-- SKILLS -->
     <section class="section skills" id="skills">
+
       <div class="section-heading">
         <p class="section-subtitle">MY SKILLS</p>
         <h2>My <span>Skills</span></h2>
       </div>
 
       <div class="skill-list">
+
+        <button class="skill-card" data-skill="python">
+          <i class="devicon-python-plain"></i>
+          <h3>Python</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
 
         <button class="skill-card" data-skill="html">
           <i class="devicon-html5-plain"></i>
@@ -118,11 +124,48 @@
           <p>クリックして詳細を見る</p>
         </button>
 
-        <button class="skill-card" data-skill="python">
-          <i class="devicon-python-plain"></i>
-          <h3>Python</h3>
+        <button class="skill-card" data-skill="GitHub">
+          <i class="devicon-github-plain"></i>
+          <h3>GitHub</h3>
           <p>クリックして詳細を見る</p>
         </button>
+
+        <button class="skill-card" data-skill="VSCode">
+          <i class="devicon-vscode-plain"></i>
+          <h3>VSCode</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
+
+        <button class="skill-card" data-skill="ArduinoIDE">
+          <i class="devicon-arduino-plain"></i>
+          <h3>ArduinoIDE</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
+        
+        <button class="skill-card" data-skill="DeedsDCS">
+          <span class="tool-icon">
+            <i data-lucide="circuit-board"></i>
+          </span>
+          <h3>Deeds-DCS</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
+
+        <button class="skill-card" data-skill="MakeCodeformicrobit">
+          <span class="tool-icon">
+            <i data-lucide="microchip"></i>
+          </span>
+          <h3>MakeCode for micro:bit</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
+
+        <button class="skill-card" data-skill="Tinkercad">
+          <span class="tool-icon">
+            <i data-lucide="box"></i>
+          </span>
+          <h3>Tinkercad</h3>
+          <p>クリックして詳細を見る</p>
+        </button>
+
 
       </div>
     </section>
@@ -176,15 +219,11 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
+    <!-- MY GITHUB -->
+    <section class="section contact" id="github">
       <div class="contact-box">
-        <p class="section-subtitle">CONTACT</p>
-        <h2>Thank <span>You!</span></h2>
-        <p>
-          最後までご覧いただきありがとうございます。<br>
-          ご連絡はこちらからお願いします。
-        </p>
+        <p class="section-subtitle">MY GITHUB</p>
+        <h2>Git<span>Hub</span></h2>
         <a href="mailto:example@example.com" class="main-button">
           Contact Me <span>→</span>
         </a>
@@ -266,6 +305,10 @@
   </div>
 
   
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
 

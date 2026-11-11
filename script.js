@@ -47,7 +47,14 @@ document.addEventListener("keydown", (event) => {
 // =========================
 
 const skills = {
-
+    python: {
+    name: "Python",
+    stars: 3,
+    level: "学習中",
+    description:
+      "さまざまな処理を自動化できるプログラミング言語。音声認識やAIを活用したシステムなどを制作しています。"
+  },
+  
   html: {
     name: "HTML",
     stars: 2,
@@ -72,13 +79,53 @@ const skills = {
       "Webページに動きを追加するための言語。ボタン操作や画面の切り替えなどを学習しています。"
   },
 
-  python: {
-    name: "Python",
+  GitHub: {
+    name: "GitHub",
+    stars: 2,
+    level: "学習中",
+    description:
+      "学校の課題や制作物のソースコード管理・共有に使用しています。Gitを用いたバージョン管理の基本操作を学習しています。"
+  },
+
+  VSCode: {
+    name: "VSCode",
+    stars: 2,
+    level: "学習中",
+    description:
+      "学校の課題やプログラミング制作で使用。Pythonの開発ではvenvによる仮想環境も利用しています。"
+  },
+
+  ArduinoIDE: {
+    name: "ArduinoIDE",
+    stars: 2,
+    level: "学習中",
+    description:
+      "Arduinoの実験実習で使用。プログラムの作成やマイコンへの書き込みに利用しています。"
+  },
+
+  DeedsDCS: {
+    name: "Deeds-DCS",
+    stars: 2,
+    level: "学習中",
+    description:
+      "「論理回路1」の授業で使用。論理回路の設計や動作確認に利用しています。"
+  },
+
+  MakeCodeformicrobit: {
+    name: "MakeCode for micro:bit",
+    stars: 2,
+    level: "学習中",
+    description:
+      "1年の実験実習で使用。micro:bitのプログラミングに利用しました。"
+  },
+
+  Tinkercad: {
+    name: "Tinkercad",
     stars: 3,
     level: "学習中",
     description:
-      "さまざまな処理を自動化できるプログラミング言語。音声認識やAIを活用したシステムなどを制作しています。"
-  }
+      "「マイクロコンピュータ」の授業で使用。電子回路の作成やシミュレーションに利用しました。"
+  },
 
 };
 

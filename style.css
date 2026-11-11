@@ -914,3 +914,19 @@ body.modal-open {
   white-space: pre-line;
   line-height: 1.8;
 }
+
+/* Lucideアイコン専用 */
+.tool-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tool-icon svg {
+  width: 45px;
+  height: 45px;
+  color: #A78BD4;
+  stroke: #A78BD4;
+  stroke-width: 1.8;
+}
