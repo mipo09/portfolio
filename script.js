@@ -139,7 +139,7 @@ const works = {
   planner: {
     name: "Study Planner",
     description:
-      "課題や予定を管理するWebアプリケーション。カレンダーや課題一覧などを活用し、予定を分かりやすく管理できるように制作しました。",
+      "2026年6~11月\n総合課題実習で4名のメンバーと作成。\n私ともう1人でフロントエンドを担当。\n課題や予定を管理するWebアプリケーション。カレンダーや課題一覧などを活用し、予定を分かりやすく管理できるように制作しました。",
     url:"https://schedule-sai.vercel.app/",
     images: [
       "images/works/planner-1.png",
@@ -152,7 +152,7 @@ const works = {
   cafe: {
     name: "Cafe Manager",
     description:
-      "商品販売や売上管理などを行いながら、カフェを経営するシミュレーションゲームです。",
+      "2026年8~9月\nプログラミング1の自由課題として主にPythonを用いてGoogle Colab上で作成しました。\n商品販売や売上管理などを行いながら、カフェを経営するシミュレーションゲームです。",
     url:"https://github.com/mipo09/portfolio/blob/main/%E8%AA%B2%E9%A1%8C04_01_AM.ipynb",
     images: [
       "images/works/cafe-manager-1.png",
