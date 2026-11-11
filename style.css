@@ -930,3 +930,86 @@ body.modal-open {
   stroke: #A78BD4;
   stroke-width: 1.8;
 }
+
+/* MY GITHUB */
+.contact-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  min-height: 150px;
+  padding: 35px 45px;
+  gap: 30px;
+  border-radius: 24px;
+}
+
+/* GitHubアイコン */
+.contact-card > i {
+  font-size: 55px;
+}
+
+/* GitHubの名前 */
+.contact-card h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+/* GitHubのURL */
+.contact-card p {
+  font-size: 18px;
+}
+
+/* ホバー時の動き */
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   MY GITHUB レイアウト調整
+========================= */
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  min-height: 150px;
+  padding: 35px 45px;
+  gap: 30px;
+
+  background: white;
+  border: 1px solid #E9DFF5;
+  border-radius: 24px;
+
+  text-align: left;
+}
+
+/* GitHubアイコン */
+.contact-card > i {
+  display: block;
+  flex: 0 0 60px;
+  width: 60px;
+  font-size: 55px;
+  color: #554B63;
+  text-align: center;
+  margin: 0;
+}
+
+/* 文字部分 */
+.contact-card > div {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-card h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 0;
+}
