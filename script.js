@@ -140,6 +140,7 @@ const works = {
     name: "Study Planner",
     description:
       "課題や予定を管理するWebアプリケーション。カレンダーや課題一覧などを活用し、予定を分かりやすく管理できるように制作しました。",
+    url:"https://schedule-sai.vercel.app/",
     images: [
       "images/works/planner-1.png",
       "images/works/planner-2.png",
@@ -148,22 +149,11 @@ const works = {
     ]
   },
 
-  minutes: {
-    name: "ハンズフリー議事録システム",
-    description:
-      "音声認識や画像解析を活用して、会議の内容を自動で記録・整理するシステムです。",
-    images: [
-      "images/works/minutes-1.png",
-      "images/works/minutes-2.png",
-      "images/works/minutes-3.png",
-      "images/works/minutes-4.png"
-    ]
-  },
-
   cafe: {
     name: "Cafe Manager",
     description:
       "商品販売や売上管理などを行いながら、カフェを経営するシミュレーションゲームです。",
+    url:"https://github.com/mipo09/portfolio/blob/main/%E8%AA%B2%E9%A1%8C04_01_AM.ipynb",
     images: [
       "images/works/cafe-manager-1.png",
       "images/works/cafe-manager-2.png",
@@ -219,6 +209,16 @@ document.querySelectorAll("[data-work]").forEach(card => {
 
     document.getElementById("workDescription").textContent =
       currentWork.description;
+
+    // 作品のURLを設定
+    const workLink = document.getElementById("workLink");
+
+    if (workLink && currentWork.url) {
+        workLink.href = currentWork.url;
+        workLink.style.display = "inline-block";
+    } else if (workLink) {
+        workLink.style.display = "none";
+    }
 
     showImage();
 

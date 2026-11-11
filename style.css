@@ -892,3 +892,20 @@ body.modal-open {
 .modal-content::-webkit-scrollbar-thumb:hover {
   background: #8062B0;
 }
+
+.work-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #A78BD4;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.work-link:hover {
+  background: #8062B0;
+  transform: translateY(-3px);
+}
