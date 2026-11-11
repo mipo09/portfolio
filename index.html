@@ -14,6 +14,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
   >
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -73,7 +74,6 @@
       <div class="section-heading">
         <p class="section-subtitle">ABOUT ME</p>
         <h2>About <span>Me</span></h2>
-        <p>私について</p>
       </div>
 
       <div class="about-card">
@@ -96,34 +96,33 @@
       <div class="section-heading">
         <p class="section-subtitle">MY SKILLS</p>
         <h2>My <span>Skills</span></h2>
-        <p>学習している技術</p>
       </div>
 
       <div class="skill-list">
 
-        <div class="skill-card">
-          <div class="skill-icon">🌷</div>
+        <button class="skill-card" data-skill="html">
+          <i class="devicon-html5-plain"></i>
           <h3>HTML</h3>
-          <p>Webページの構造を作成</p>
-        </div>
+          <p>クリックして詳細を見る</p>
+        </button>
 
-        <div class="skill-card">
-          <div class="skill-icon">🎨</div>
+        <button class="skill-card" data-skill="css">
+          <i class="devicon-css3-plain"></i>
           <h3>CSS</h3>
-          <p>Webページのデザインを作成</p>
-        </div>
+          <p>クリックして詳細を見る</p>
+        </button>
 
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
+        <button class="skill-card" data-skill="javascript">
+          <i class="devicon-javascript-plain"></i>
           <h3>JavaScript</h3>
-          <p>Webページに動きを追加</p>
-        </div>
+          <p>クリックして詳細を見る</p>
+        </button>
 
-        <div class="skill-card">
-          <div class="skill-icon">🐍</div>
+        <button class="skill-card" data-skill="python">
+          <i class="devicon-python-plain"></i>
           <h3>Python</h3>
-          <p>プログラムやシステムの開発</p>
-        </div>
+          <p>クリックして詳細を見る</p>
+        </button>
 
       </div>
     </section>
@@ -133,7 +132,6 @@
       <div class="section-heading">
         <p class="section-subtitle">MY WORKS</p>
         <h2>My <span>Works</span></h2>
-        <p>制作した作品</p>
       </div>
 
       <div class="work-list">
@@ -217,6 +215,67 @@
     <p>© 2026 My Portfolio</p>
   </footer>
 
+
+  <!-- モーダル -->
+  <div class="modal" id="detailModal" aria-hidden="true">
+
+    <div class="modal-content">
+
+      <button class="modal-close" id="modalClose"
+        aria-label="閉じる">×</button>
+
+      <!-- Skills用 -->
+      <div id="skillDetail" class="modal-section">
+
+        <p class="section-subtitle">MY SKILLS</p>
+        <h2 id="skillName">HTML</h2>
+
+        <div class="skill-stars" id="skillStars"
+          aria-label="習得度"></div>
+
+        <p id="skillLevel"></p>
+
+        <div class="modal-description">
+          <h3>ABOUT</h3>
+          <p id="skillDescription"></p>
+        </div>
+
+      </div>
+
+      <!-- Works用 -->
+      <div id="workDetail" class="modal-section">
+
+        <p class="section-subtitle">MY WORKS</p>
+        <h2 id="workName"></h2>
+
+        <div class="slider">
+
+          <button class="slider-arrow prev"
+            id="prevImage" aria-label="前の画像">‹</button>
+
+          <img id="sliderImage" src="" alt="作品画像">
+
+          <button class="slider-arrow next"
+            id="nextImage" aria-label="次の画像">›</button>
+
+        </div>
+
+        <div class="slider-counter" id="sliderCounter">
+          1 / 4
+        </div>
+  
+        <div class="modal-description">
+          <h3>ABOUT</h3>
+          <p id="workDescription"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
 </body>
 </html>
 

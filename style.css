@@ -42,7 +42,7 @@ img {
 }
 
 /* =========================
-   ヘッダー
+  ヘッダー
 ========================= */
 
 .header {
@@ -92,7 +92,7 @@ img {
 }
 
 /* =========================
-   HOME
+  HOME
 ========================= */
 
 .hero {
@@ -590,4 +590,280 @@ img {
   .section-heading h2 {
     font-size: 30px;
   }
+}
+
+
+
+/* =========================
+   Skills アイコン
+========================= */
+
+.skill-card {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+}
+
+.skill-card i {
+  font-size: 55px;
+  color:#A78BD4;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.skill-card p {
+  margin-top: 5px;
+}
+
+/* =========================
+   Works カード
+========================= */
+
+.work-card {
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+}
+
+.work-more {
+  color: var(--main-dark);
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+/* =========================
+   モーダル
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(55, 40, 75, 0.5);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  background: #FFFFFF;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  padding: 45px 40px;
+  border-radius: 30px;
+
+  box-shadow: 0 15px 50px rgba(50, 30, 80, 0.15);
+
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.modal.active .modal-content {
+  transform: translateY(0);
+}
+
+/* 閉じるボタン */
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--light);
+  color: var(--main-dark);
+
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-close:hover {
+  background: var(--main);
+  color: white;
+}
+
+/* モーダル内の共通部分 */
+
+.modal-section h2 {
+  font-size: 30px;
+  color: var(--main-dark);
+  margin: 8px 0 20px;
+}
+
+.modal-description {
+  background: var(--pale);
+  border-radius: 20px;
+  padding: 22px;
+  margin-top: 25px;
+}
+
+.modal-description h3 {
+  color: var(--main-dark);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.modal-description p {
+  font-size: 13px;
+  color: var(--sub-text);
+  line-height: 2;
+}
+
+/* =========================
+   習得度の星
+========================= */
+
+.skill-stars {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0 5px;
+}
+
+.star {
+  font-size: 30px;
+  color: #E5DDED;
+}
+
+.star.active {
+  color: #B18BDB;
+}
+
+#skillLevel {
+  font-size: 12px;
+  color: var(--sub-text);
+}
+
+/* =========================
+   作品画像スライダー
+========================= */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  background: var(--pale);
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 左右の矢印 */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--main-dark);
+
+  font-size: 30px;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.slider-arrow:hover {
+  background: var(--main);
+  color: white;
+}
+
+.slider-arrow.prev {
+  left: 12px;
+}
+
+.slider-arrow.next {
+  right: 12px;
+}
+
+/* 画像番号 */
+
+.slider-counter {
+  text-align: center;
+  color: var(--main-dark);
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+/* モーダル表示中の背景スクロール防止 */
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media (max-width: 600px) {
+
+  .modal-content {
+    padding: 40px 22px 25px;
+    border-radius: 25px;
+  }
+
+  .modal-section h2 {
+    font-size: 25px;
+  }
+
+  .slider {
+    height: 220px;
+  }
+
+  .skill-card i {
+    font-size: 45px;
+  }
+
+  .star {
+    font-size: 25px;
+  }
+
 }
