@@ -285,14 +285,23 @@ img {
 }
 
 .about-icon {
-  min-width: 90px;
+  width: 90px;
   height: 90px;
+  min-width: 90px;
+  flex: 0 0 90px;
   border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
   background: var(--light);
-  color: var(--main-dark);
-  display: grid;
-  place-items: center;
-  font-size: 40px;
+}
+
+.about-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-text h3 {
@@ -971,4 +980,20 @@ body.modal-open {
 .contact-card p {
   font-size: 18px;
   margin: 0;
+}
+
+.credit {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--sub-text);
+}
+
+.credit a {
+  color: #EDE5F9;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.credit a:hover {
+  color: #FFFFFF;
 }
